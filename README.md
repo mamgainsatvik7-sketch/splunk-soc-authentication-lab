@@ -263,4 +263,23 @@ Potential extensions include:
 ---
 
 **Project status:** Core Splunk searches, dashboard panels, and the initial incident investigation are complete. Repository documentation and portfolio presentation are being finalized.
+## Dashboard and Detection Screenshots
+
+### SOC Authentication Monitoring Dashboard
+
+The dashboard summarizes failed logins, successful logins, and suspicious authentication patterns.
+
+![SOC Authentication Monitoring Dashboard](screenshots/dashboard-overview.png)
+
+### Failed Logins by Username
+
+This detection identifies accounts with repeated authentication failures. In this sample dataset, the `admin` account had the highest number of failed login attempts.
+
+![Failed Logins by Username](screenshots/failed-logins-by-user.png)
+
+### Suspicious Login Patterns
+
+This detection highlights successful login events preceded by repeated failures within a five-minute window. These patterns warrant investigation but do not independently confirm account compromise.
+
+![Suspicious Login Patterns](screenshots/suspicious-login-patterns.png)
 
