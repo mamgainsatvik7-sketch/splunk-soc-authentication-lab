@@ -1,0 +1,13 @@
+index=main source="*authentication_logs.csv*" event_type="login" status="failure"
+| stats count AS failed_attempts BY username source_ip
+| where failed_attempts >= 3
+| sort - failed_attempts
+# Detection: Repeated Failed Login Attempts
+# Purpose: Identify username and source IP combinations with 3 or more failed login events.
+# Data source: Synthetic authentication_logs.csv dataset.
+# Limitation: A threshold match is suspicious activity for investigation, not proof of an attack.
+
+index=main source="*authentication_logs.csv*" event_type="login" status="failure"
+| stats count AS failed_attempts BY username source_ip
+| where failed_attempts >= 3
+| sort - failed_attempts
