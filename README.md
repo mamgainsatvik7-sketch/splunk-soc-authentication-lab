@@ -120,10 +120,12 @@ These counts describe the dataset used during the investigation. They are not me
 This detection groups failed authentication events by username and source IP address, then returns combinations with at least three failures.
 
 ```spl
-index=main source="*authentication_logs.csv*" status=failure
+index=main source="*authentication_logs.csv*" event_type="login" status="failure"
 | stats count AS failed_attempts BY username source_ip
 | where failed_attempts >= 3
 | sort - failed_attempts
+```
+
 ```
 
 **Observed results:**
