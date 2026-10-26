@@ -84,7 +84,7 @@ splunk-soc-authentication-lab/
     └── investigation-findings.md
 ```
 
-The `screenshots/` and `documentation/` directories are planned additions and may not yet exist in the repository.
+
 
 ## Dataset
 
@@ -169,7 +169,6 @@ It contains four panels:
 
 The dashboard provides a consolidated view of authentication activity and supports further investigation.
 
-Screenshots will be added to the `screenshots/` directory after they have been captured and reviewed.
 
 ## Incident Investigation
 
@@ -255,14 +254,15 @@ Potential extensions include:
 * Test detection thresholds against additional benign and suspicious patterns.
 * Investigate multiple source IP addresses and distributed failures.
 * Improve event normalization and timestamp handling.
-* Add investigation findings and dashboard screenshots.
+
 * Explore alerting and scheduled searches.
 * Document false-positive considerations and detection tuning.
 * Add tests that verify expected detection results.
 
 ---
 
-**Project status:** Core Splunk searches, dashboard panels, and the initial incident investigation are complete. Repository documentation and portfolio presentation are being finalized.
+**Project status:** **Project status:** Core Splunk searches, dashboard panels, incident investigation, and documentation are complete. This project demonstrates foundational SOC Analyst Level 1 skills using a synthetic authentication dataset. The detections have not been validated in a production environment.
+
 ## Dashboard and Detection Screenshots
 
 ### SOC Authentication Monitoring Dashboard
