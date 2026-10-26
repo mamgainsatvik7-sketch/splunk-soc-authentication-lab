@@ -261,7 +261,7 @@ Potential extensions include:
 
 ---
 
-**Project status:** **Project status:** Core Splunk searches, dashboard panels, incident investigation, and documentation are complete. This project demonstrates foundational SOC Analyst Level 1 skills using a synthetic authentication dataset. The detections have not been validated in a production environment.
+ **Project status:** Core Splunk searches, dashboard panels, incident investigation, and documentation are complete. This project demonstrates foundational SOC Analyst Level 1 skills using a synthetic authentication dataset. The detections have not been validated in a production environment.
 
 ## Dashboard and Detection Screenshots
 
